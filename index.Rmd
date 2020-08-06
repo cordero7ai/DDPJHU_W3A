@@ -17,7 +17,7 @@ Brief presentation with the following features:
 - Use of the plotly library.
 - Interactive plots over the mtcars dataset using plotly.
 
-The Rmarkdown is in [https://github.com/corderoai/DDPJHU_W2A](https://github.com/corderoai/DDPJHU_W2A).
+The Rmarkdown is in [https://github.com/corderoai/DDPJHU_W3A](https://github.com/corderoai/DDPJHU_W3A).
 
 ## Interactive mtcars!
 ```{r mt1, eval=FALSE}
