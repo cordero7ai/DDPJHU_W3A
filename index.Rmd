@@ -1,0 +1,63 @@
+---
+title: "Week 3 Assignment - Developing Data Products"
+author: "jc"
+date: "8/6/2020"
+output: ioslides_presentation
+---
+
+
+## Instructions
+
+Create a web page presentation using R Markdown that features a plot created with Plotly. Host your webpage on either GitHub Pages, RPubs, or NeoCities. Your webpage must contain the date that you created the document, and it must contain a plot created with Plotly. We would love to see you show off your creativity!
+
+### Outline
+
+Brief presentation with the following features:
+
+- Use of the plotly library.
+- Interactive plots over the mtcars dataset using plotly.
+
+## Interactive mtcars!
+```{r mt1, eval=FALSE}
+library(plotly)
+f <- list(
+  family = "Courier New, monospace",
+  size = 14,
+  color = "#2f7f7f"
+)
+x <- list(
+  title = "QT",
+  titlefont = f
+)
+y <- list(
+  title = "MPG",
+  titlefont = f
+)
+fig <- plot_ly(mtcars, x = mtcars$qsec, y=mtcars$mpg, mode="markers", 
+        type="scatter",color=as.factor(mtcars$cyl), size=mtcars$hp)
+fig <- fig %>% layout(xaxis = x, yaxis = y)
+fig
+
+```
+## QT vs MPG
+```{r mt2, echo=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+f <- list(
+  family = "Courier New, monospace",
+  size = 14,
+  color = "#2f7f7f"
+)
+x <- list(
+  title = "QT",
+  titlefont = f
+)
+y <- list(
+  title = "MPG",
+  titlefont = f
+)
+fig <- plot_ly(mtcars, x = mtcars$qsec, y=mtcars$mpg, mode="markers", 
+        type="scatter",color=as.factor(mtcars$cyl), size=mtcars$hp)
+fig <- fig %>% layout(xaxis = x, yaxis = y)
+fig
+
+```
