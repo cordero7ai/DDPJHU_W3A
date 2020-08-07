@@ -12,7 +12,7 @@ Create a web page presentation using R Markdown that features a plot created wit
 
 ### Outline
 
-Brief presentation with the following features:
+Brief presentation with the following features
 
 - Use of the plotly library.
 - Interactive plots over the mtcars dataset using plotly.
